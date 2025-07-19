@@ -1,6 +1,9 @@
 #include "../include/Solution.h"
+#include "show_array.h"
 #include <algorithm>
 #include <iostream>
+
+using std::vector;
 
 int Solution::findContentChildren(std::vector<int>& g, std::vector<int>& s){
 // https://leetcode.com/problems/assign-cookies/
@@ -26,10 +29,19 @@ int Solution::findContentChildren(std::vector<int>& g, std::vector<int>& s){
         return children_index;
     }
 
-// int Solution::candy(std::vector<int>& ratings){
-//   // https://leetcode.com/problems/candy/
-//   int candies = ratings.size();
-//   fo
+int Solution::candy(std::vector<int>& ratings){
+  // https://leetcode.com/problems/candy/
+  int candies_numbers = ratings.size();
+  vector<int> candies(ratings.size(), 1);
 
-
-// }
+  for(int i = 1; i < ratings.size(); i++){
+    if(ratings[i-1] < ratings[i]){
+      candies[i] = candies[i-1] + 1;
+      candies_numbers++;
+    }
+      
+    show_array(ratings);
+    show_array(candies);
+  }
+  return candies_numbers;
+}
