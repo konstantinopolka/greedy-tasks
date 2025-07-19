@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Main Program",
+            "command": "./scripts/run_main.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "detail": "Build task for the main program using CMake."
+        },
+        {
+            "type": "shell",
+            "label": "Build Tests",
+            "command": "./scripts/run_tests.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "detail": "Build task for the tests using CMake."
+        },
+        {
+            "type": "shell",
+            "label": "Build All (Main and Tests)",
+            "command": "./scripts/build.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Build task for both main and tests using CMake."
+        }
+    ]
+}

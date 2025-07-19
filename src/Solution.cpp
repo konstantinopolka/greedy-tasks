@@ -1,4 +1,4 @@
-#include "Solution.h"
+#include "../include/Solution.h"
 #include <algorithm>
 #include <iostream>
 

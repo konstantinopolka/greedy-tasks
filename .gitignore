@@ -21,8 +21,8 @@ myprogram
 .DS_Store
 Thumbs.db
 
-# === VS Code Settings ===
-.vscode/
+# # === VS Code Settings ===
+# .vscode/
 
 # === Build Folders (if used) ===
 build/
