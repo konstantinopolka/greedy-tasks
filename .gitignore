@@ -1,0 +1,35 @@
+# === Compiled Binaries ===
+main
+Solution
+myprogram
+
+# === Compiled Object Files ===
+*.o
+
+# === Executables ===
+*.out
+*.exe
+
+# === C++ Build Tools ===
+*.a
+*.so
+
+# === Editor and OS Files ===
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# === VS Code Settings ===
+.vscode/
+
+# === Build Folders (if used) ===
+build/
+cmake-build*/
+
+# === CMake files ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
